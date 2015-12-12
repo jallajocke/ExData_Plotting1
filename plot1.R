@@ -12,7 +12,7 @@ length(which(HPC$Global_active_power == "?"))
 GAP <- as.numeric(GAP)
 
 # Create the plot
-par(mfrow=c(1,1))
 png(filename="plot1.png")
+par(mfrow=c(1,1))
 hist(GAP, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()

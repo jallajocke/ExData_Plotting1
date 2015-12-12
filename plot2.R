@@ -17,7 +17,7 @@ length(which(HPC$Global_active_power == "?"))
 HPC$Global_active_power <- as.numeric(HPC$Global_active_power)
 
 # Create the plot
-par(mfrow=c(1,1))
 png(filename="plot2.png")
+par(mfrow=c(1,1))
 plot(HPC$datetime, HPC$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

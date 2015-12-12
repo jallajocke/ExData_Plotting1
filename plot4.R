@@ -31,7 +31,7 @@ subnames <- colnames(HPC[grep("Sub", colnames(HPC))])
 plot(HPC$datetime, HPC$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 with(HPC$datetime, lines(HPC$datetime, HPC$Sub_metering_2, col="red"))
 with(HPC$datetime, lines(HPC$datetime, HPC$Sub_metering_3, col="blue"))
-legend("topright", pch=1, col=colors,legend=subnames, bty="n")
+legend("topright", lty=c(1,1,1), col=colors,legend=subnames, bty="n")
 
 plot(HPC$datetime, HPC$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 
